@@ -244,7 +244,6 @@ namespace FlatFiles.TypeMapping
             }
         }
 
-#if !NET451 && !NETSTANDARD1_6 && !NETSTANDARD2_0
         /// <summary>
         /// Writes all of the entities to the typed writer.
         /// </summary>
@@ -263,6 +262,5 @@ namespace FlatFiles.TypeMapping
                 await writer.WriteAsync(entity).ConfigureAwait(false);
             }
         }
-#endif
     }
 }

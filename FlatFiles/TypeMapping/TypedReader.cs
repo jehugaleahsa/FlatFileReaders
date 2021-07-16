@@ -438,7 +438,6 @@ namespace FlatFiles.TypeMapping
             }
         }
 
-#if !NET451 && !NETSTANDARD1_6 && !NETSTANDARD2_0
         /// <summary>
         /// Reads each record from the given reader, such that each record is retrieved asynchronously.
         /// </summary>
@@ -453,6 +452,5 @@ namespace FlatFiles.TypeMapping
                 yield return entity;
             }
         }
-#endif
     }
 }
